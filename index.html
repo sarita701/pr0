@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: #808080;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+}
+
+.chicken .title {
+    background-color: #ffb6b6; 
+    color: black;
+}
+
+.beef .title {
+    background-color: #a52a2a;
+    color: white;
+}
+
+.sushi .title {
+    background-color: #ffcc66;
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .box {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        width: 45%;
+    }
+
+    .box:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .box {
+        width: 100%
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    <div class="container">
+        <section class="box chicken">
+            <div class="title">Chicken</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+        <section class="box beef">
+            <div class="title">Beef</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+        <section class="box sushi">
+            <div class="title">Sushi</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+    </div>
+</body>
+</html>
